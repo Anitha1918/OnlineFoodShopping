@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>Online FoodShop</title>
+    <link rel="icon" href="https://img.freepik.com/premium-vector/supermarket-logo-template-design_23-2148469238.jpg" type="image/x-icon">
+</head>
+
+<style>
+    body{
+        background-image: url("https://media.istockphoto.com/id/1282572255/vector/carrot-in-a-hand-drawn-linear-style.jpg?s=2048x2048&w=is&k=20&c=T6AnN6sn2H6x-iy7oY7XsHlGr6aDlItTVand6ZaS9Ks=");
+    }
+    ul{
+        list-style-type: none;
+        background-color: black;
+        overflow:hidden;
+        padding:8px;
+        margin:8px;
+    }
+    li{
+        float:left;
+    }
+    li a{
+        display:block;
+        text-align: center;
+        padding: 9px 9px;
+        text-decoration: none;
+        color:white;
+    }
+    li a:hover{
+        background-color: #04AA6D;
+    }
+    li a:not(.active)
+    {
+        background-color: #111;
+    }
+    .active{
+        background-color:black ;
+    }
+    .container{
+        float:right;
+        border:2px solid green;
+        padding:10px;
+        background-color:black;
+        color:white;
+    }
+    </style>
+<body>
+    <ul>
+        <li><a class="active" href="#Home">Home</a></li>
+        <li><a class="active" href="Menu">Menu</a></li>
+        <li><a class="active" href="#About">About</a></li>
+        <li><a class="active" href="#Contactus">ContactUs</a></li>
+    </ul>
+    <div class="container">
+        <form action="/action_page.php">
+            <label>Email:</label><br>
+            <input type="email" name="email"><br><br>
+            <label>Password:</label><br>
+            <input type="password" name="passwd"><br><br>
+            <button type="button" formtarget="_blank">Login</button>
+            <br><br>    
+            <input type="checkbox" name="checkbox">
+            <label>Accept the terms and agreement</label>
+        </form>
+    </div>
+</body>
